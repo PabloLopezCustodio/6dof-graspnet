@@ -2,8 +2,8 @@ opencv-python==4.1.2.30
 PyQt5==5.15.6
 h5py==2.10.0 
 tqdm==4.45.0 
-vtk==9.0.1
-mayavi==4.7.1
+vtk==9.1.0
+mayavi==4.7.3
 PyYAML==5.2
 trimesh==3.6.30 
 numpy==1.17.4

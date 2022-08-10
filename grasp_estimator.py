@@ -53,9 +53,9 @@ def joint_config(vae_folder, evaluator_folder='', dataset_root_folder='', eval_s
           evaluator.
     """
     print('--> loading {}'.format(os.path.join(vae_folder, 'args.yaml')))
-    vae_cfg = vars(yaml.load(open(os.path.join(vae_folder, 'args.yaml'))))
+    vae_cfg = vars(yaml.load(open(os.path.join(vae_folder, 'args.yaml')), Loader=yaml.UnsafeLoader))
     print('--> loading {}'.format(os.path.join(evaluator_folder, 'args.yaml')))
-    evaluator_cfg = vars(yaml.load(open(os.path.join(evaluator_folder, 'args.yaml'))))
+    evaluator_cfg = vars(yaml.load(open(os.path.join(evaluator_folder, 'args.yaml')), Loader=yaml.UnsafeLoader))
 
     args = copy.deepcopy(vae_cfg)
     for k in evaluator_cfg:

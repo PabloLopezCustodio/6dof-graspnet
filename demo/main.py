@@ -12,7 +12,8 @@ import argparse
 import grasp_estimator
 import sys
 import os
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import glob
 import mayavi.mlab as mlab
 from visualization_utils import *

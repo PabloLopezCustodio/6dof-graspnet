@@ -31,13 +31,13 @@ try:
 except:
     pass
 
-try:
-    # mayavi is not set up in docker.
-    from visualization_utils import draw_scene
-    HEADLESS = False
-except:
-    import horovod.tensorflow as hvd
-    HEADLESS = True
+#try:
+#    # mayavi is not set up in docker.
+#    from visualization_utils import draw_scene
+#    HEADLESS = False
+#except:
+#    import horovod.tensorflow as hvd
+#    HEADLESS = True
 
 import models.model
 from tf_utils import get_shape

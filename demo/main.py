@@ -15,7 +15,7 @@ import os
 import tensorflow as tf
 import glob
 #import mayavi.mlab as mlab
-from visualization_utils import *
+#from visualization_utils import *
 #import mayavi.mlab as mlab
 from grasp_data_reader import regularize_pc_point_count
 
